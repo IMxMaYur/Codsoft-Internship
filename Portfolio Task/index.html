@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Mayur Giri</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#cert">Certificates</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Mayur Giri</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Certificates</a></li>
+          <li><a href="#cert" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Mayur Giri profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Mayur Giri</h1>
+        <p class="section__text__p2">AI & DS Student</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-exampl.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/IMxMaYur'"
+          />
+        </div>
+      </div>
+    </section>
+    
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/profile-pic 1.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2+ Months <br />Frontend Developer</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Pursue B.E. AI & DS<br /></p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
+              reprehenderit et laborum, rem, dolore eum quod voluptate
+              exercitationem nobis, nihil esse debitis maxime facere minus sint
+              delectus velit in eos quo officiis explicabo deleniti dignissimos.
+              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
+              reiciendis ea magnam? Nulla, impedit fuga!
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+
+<!--what i know-->
+<div class="col-span-2 p-6 md:col-span-2 lg:col-span-3">
+  <div class="text-xl font-medium mt-2 text-zinc-200 mb-5">What I know</div>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+    <div class="flex-1 flex flex-col gap-4 bg-cardPrimary p-4 rounded-md shadow-lg">
+      <div class="text-primary font-medium text-lg tracking-wider">Frontend</div>
+      <div class="flex flex-wrap gap-2">
+        <div class="rounded-md bg-body text-xs text-primary p-2">HTML</div>
+        <div class="rounded-md bg-body text-xs text-primary p-2">CSS</div>
+        <div class="rounded-md bg-body text-xs text-primary p-2 border border-blue-500/60">Tailwind</div>
+        <div class="rounded-md bg-body text-xs text-primary p-2 border border-yellow-500/60">Javascript</div>
+        <div class="rounded-md bg-body text-xs text-primary p-2">Typescript</div>
+        <div class="rounded-md bg-body text-xs text-primary p-2 border border-blue-500/60">React Js</div>
+        <div class="rounded-md bg-body text-xs text-primary p-2 border border-black/60">Next Js 13</div>
+      </div>
+    </div>
+    <div class="flex-1 flex flex-col gap-4 bg-cardPrimary p-4 rounded-md shadow-lg">
+      <div class="text-primary font-medium text-lg tracking-wider">Backend</div>
+      <div class="flex flex-wrap gap-2">
+        <div class="rounded-md bg-body text-xs text-primary p-2 border border-green-500/60">Node Js</div>
+        <div class="rounded-md bg-body text-xs text-primary p-2 border border-gray-500/60">Express Js</div>
+        <div class="rounded-md bg-body text-xs text-primary p-2">BUN Js</div>
+        <div class="rounded-md bg-body text-xs text-primary p-2">Elysia</div>
+        <div class="rounded-md bg-body text-xs text-primary p-2">Next Auth</div>
+      </div>
+    </div>
+    <div class="flex-1 flex flex-col gap-4 bg-cardPrimary p-4 rounded-md shadow-lg">
+      <div class="text-primary font-medium text-lg tracking-wider">Database</div>
+      <div class="flex flex-wrap gap-2">
+        <div class="rounded-md bg-body text-xs text-primary p-2 border border-blue-500/60">MySql</div>
+        <div class="rounded-md bg-body text-xs text-primary p-2 border border-emerald-500/60">MongoDB</div>
+        <div class="rounded-md bg-body text-xs text-primary p-2 border border-blue-500/60">PostgreSQL</div>
+        <div class="rounded-md bg-body text-xs text-primary p-2 border border-red-500/60">Redis</div>
+        <div class="rounded-md bg-body text-xs text-primary p-2 border border-yellow-500/60">Elastic Search</div>
+      </div>
+    </div>
+      <div class="flex-1 flex flex-col gap-4 bg-cardPrimary p-4 rounded-md shadow-lg">
+        <div class="text-primary font-medium text-lg tracking-wider">Devops</div>
+        <div class="flex flex-wrap gap-2">
+          <div class="rounded-md bg-body text-xs text-primary p-2 border border-blue-500/60">Docker</div>
+          <div class="rounded-md bg-body text-xs text-primary p-2 border border-blue-500/60">Kubernetes</div>
+          <div class="rounded-md bg-body text-xs text-primary p-2 border border-orange-500/60">GIT</div>
+          <div class="rounded-md bg-body text-xs text-primary p-2">Jenkins</div>
+          <div class="rounded-md bg-body text-xs text-primary p-2">Ansible</div>
+          <div class="rounded-md bg-body text-xs text-primary p-2 border border-purple-500/60">Terraform</div>
+          <div class="rounded-md bg-body text-xs text-primary p-2 border border-yellow-500/60">AWS</div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!--end-->
+
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SASS</h3>
+                  <p>Noob</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Noob</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Material UI</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Noob</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Noob</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Noob</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Noob</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#cert'"
+      />
+    </section>
+
+    <section id="cert">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Certificates</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="marquee">
+            <ul class="marquee-content">
+              <li class="project-itm color-container">
+                <div class="article-container">
+                  <img src="./assets/cybertata.png" alt="Project 1" class="project-pic" />
+                </div>
+                <h2 class="tit1">Cybersecurity Analyst Job<br>Simulation by<br>TATA Groups</h2>
+                <div class="btn-cont">
+                 
+                  <button class="btn btn-color-2 project-btn" onclick="location.href='./assets/cybertata.png'">
+                    View
+                  </button>
+                </div>
+              </li>
+              <!-- Add more <li> elements for additional projects -->
+                <li class="project-itm color-container">
+                  <div class="article-container">
+                    <img src="./assets/JPMORGANCYBER.png" alt="Project 1" class="project-pic" />
+                  </div>
+                  <h2 class="tit1">Cybersecurity Job Simulation<br>by<br>JPMorgan CHASE & CO.</h2>
+                  <div class="btn-cont">
+                   
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='./assets/JPMORGANCYBER.png'">
+                      View
+                    </button>
+                  </div>
+                </li>
+                <li class="project-itm color-container">
+                  <div class="article-container">
+                    <img src="./assets/Devopaccenture.png" alt="Project 1" class="project-pic" />
+                  </div>
+                  <h2 class="tit1">Developer and Technology<br>Job Simulation by<br>Accenture</h2>
+                  <div class="btn-cont">
+                   
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='./assets/Devopaccenture.png'">
+                      View
+                    </button>
+                  </div>
+                </li>  
+                <li class="project-itm color-container">
+                  <div class="article-container">
+                    <img src="./assets/datavisuals.png" alt="Project 1" class="project-pic" />
+                  </div>
+                  <h2 class="tit1"> Data Visualisation Job<br>Simulation by TATA Groups</h2>
+                  <div class="btn-cont">
+                   
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='./assets/datavisuals.png'">
+                      View
+                    </button>
+                  </div>
+                </li>    
+            </ul>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+    </section>
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="marquee">
+            <ul class="marquee-content">
+              <li class="project-item color-container">
+                <div class="article-container">
+                  <img src="./assets/login.png" alt="Project 1" class="project-img" />
+                </div>
+                <h2 class="experience-sub-title project-title">SignUp Form</h2>
+                <div class="btn-container">
+                  <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/IMxMaYur'">
+                    Github
+                  </button>
+                  <button class="btn btn-color-2 project-btn" onclick="location.href='./Projects/SignUp-Login Form/signup-form.html'">
+                    Live Demo
+                  </button>
+                </div>
+              </li>
+              <!-- Add more <li> elements for additional projects -->
+              <li class="project-item color-container">
+                <div class="article-container">
+                  <img src="./assets/login1.png" alt="Project 1" class="project-img" />
+                </div>
+                <h2 class="experience-sub-title project-title">Login Form</h2>
+                <div class="btn-container">
+                  <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/IMxMaYur'">
+                    Github
+                  </button>
+                  <button class="btn btn-color-2 project-btn" onclick="location.href='./Projects/Login Page/index.html'">
+                    Live Demo
+                  </button>
+                </div>
+              </li>
+              <li class="project-item color-container">
+                <div class="article-container">
+                  <img src="./assets/digitalclock.png" alt="Project 1" class="project-img" />
+                </div>
+                <h2 class="experience-sub-title project-title">Digital Clock</h2>
+                <div class="btn-container">
+                  <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/IMxMaYur'">
+                    Github
+                  </button>
+                  <button class="btn btn-color-2 project-btn" onclick="location.href='./Projects/Digital_Clock/digital-clock.html'">
+                    Live Demo
+                  </button>
+                </div>
+              </li>
+              <li class="project-item color-container">
+                <div class="article-container">
+                  <img src="./assets/magicsquare.png" alt="Project 1" class="project-img" />
+                </div>
+                <h2 class="experience-sub-title project-title">Magic Square</h2>
+                <div class="btn-container">
+                  <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/IMxMaYur'">
+                    Github
+                  </button>
+                  <button class="btn btn-color-2 project-btn" onclick="location.href='./Projects/Magic Square/index.html'">
+                    Live Demo
+                  </button>
+                </div>
+              </li>
+              <li class="project-item color-container">
+                <div class="article-container">
+                  <img src="./assets/tictactoe.png" alt="Project 1" class="project-img" />
+                </div>
+                <h2 class="experience-sub-title project-title">Tic-Tac-Toe</h2>
+                <div class="btn-container">
+                  <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                    Github
+                  </button>
+                  <button class="btn btn-color-2 project-btn" onclick="location.href='./Projects/Tic-Tac-Toe Game/index.html'">
+                    Live Demo
+                  </button>
+                </div>
+              </li>
+              <li class="project-item color-container">
+                <div class="article-container">
+                  <img src="./assets/time-date.png" alt="Project 1" class="project-img" />
+                </div>
+                <h2 class="experience-sub-title project-title">Time-Date</h2>
+                <div class="btn-container">
+                  <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                    Github
+                  </button>
+                  <button class="btn btn-color-2 project-btn" onclick="location.href='./Projects/Time-Date/index.html'">
+                    Live Demo
+                  </button>
+                </div>
+              </li>
+              <!-- Add more <li> elements for additional projects -->
+            </ul>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+    </section>
+    
+
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">mayurgiri16@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/instagram.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.instagram.com/mayurgiri_">Instagram</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#cert">Certificates</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Mayur Giri. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
